@@ -1,7 +1,4 @@
-#!/usr/bin/expect
-
+#!/bin/sh
 git add -A
 git commit -m "ServerUpdate"
-spawn git push origin master
-expect "username: "
-send "magicle\r"
+git push origin master
