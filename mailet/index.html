@@ -49,7 +49,7 @@
 
       
       <div><h2>How to use? </h2> </div>
-      1. Send an Email with random content to an Mailet server <br>
+      1. Send an Email with random content to mailetproject@gmail.com<br>
       2. Authorize by using the attached HTML page in the email response <br>
       3. Access social websites by sending and receving emails.
 
@@ -59,7 +59,9 @@
       <div><h2>For volunteer: run a Mailet server</h2></div>
       If you have a Linux box, and is willing to contribute, run a Mailet server!
       
-      
+      <div> Initiator and Interceptor List: <br>
+        <div id="includedContent"></div>
+      </div> 
       
       
       
@@ -68,9 +70,17 @@
       <div style="width:800px;height=200px;margin:0 auto;"> </div>
       <h2> News: </h2>
       <p></p>
+      <p><em>3/31/2015:</em> <font>Experimental test open: send emails to mailetproject@gmail.com</font></p>
       <p><em>3/18/2015:</em> <font>Mailet homepage is created!</font></p>
 
 	<h3>warning:</h3>
 <p>This software is an experimental prototype intended for researchers. It does not guarantee the privacy of the user. Also, it is purposed for research on anonymity, Censorship/Anti-censorship, with NO political intents. If you have any questions, please email facetumn@gmail.com </p>
     </div>
   
+
+    <script src="jquery.js"></script> 
+    <script> 
+      $(function(){
+      $("#includedContent").load("ServerList"); 
+    });
+    </script> 
