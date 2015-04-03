@@ -1,0 +1,59 @@
+<!--google font-->
+<link href='http://fonts.googleapis.com/css?family=Playfair+Display'            rel='stylesheet' type='text/css'>
+
+<link href='http://fonts.googleapis.com/css?family=Exo' rel='stylesheet'        type='text/css'>
+
+<link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet'       type='text/css'>
+
+
+<style type="text/css">
+  <!--
+  A:link {color:#009933}
+  A:visited {color:#009933}
+  A:active {color:#80CC80}
+  A:hover {color:#80CC80}
+  -->
+
+
+.mailet{width:60px;height:60px;border-radius:50px;font-size:16px;color:#000000;line-height:60px;text-align:center;background:#C2EBFF}
+.mailet:hover{color:#000000;text-decoration:none;background:#B2E6FF}
+
+</style>
+
+
+<html>
+  <body style="background-color:#F8F8F8;font-size:16px;font-family: 'Lora', serif;">
+    <div id="container" style="width:800px;background-color:#E0F5FF;margin:0 auto;">
+      <div style="width:800px;height:15px;margin:0 auto;"></div>
+
+
+      <!---navigation buttons--->
+      <div style="width:400px;height:10px;;margin-left:auto; margin-right:10;"> <a href="./index.html"><div class="mailet" style="display:inline-block">Home</div></a> &nbsp &nbsp &nbsp<a href="./code.html"><div class="mailet" style="display:inline-block">Code</div></a>&nbsp &nbsp &nbsp<a href="./design.html"><div class="mailet" style="display:inline-block">Design</div></a>&nbsp &nbsp &nbsp<a href="./about.html"><div class="mailet" style="display:inline-block">About</div></a></div>
+      
+      <div style="margin-left:50px;"><font size="10" color=#FF8000 face="Exo"><b>Mailet</b></font></div>
+      <font face="georgia" size="4" color="#909090"><em>&nbsp &nbsp Social Networking by Email Proxying</em></font>
+      
+      <hr color="#660000">
+
+      <div style="width:800px;height=200px;background-color:#FFFFFF;margin:0 auto;"> </div> 
+
+
+
+      <!---design section--->
+
+      <!---picture here--->
+      <img src="arch.jpg" alt="System Architecture" width="800" height="250">
+
+      <!---description--->
+      <p>Mailet servers bridge the gap between the social websites and restricted users by utilizing email application. Without installing any software, a confined user can access social websites by sending browsing requests and receiving responses from the websites all in emails. We put emphasis on protecting the credential security of users against potential unsafe servers, and split the crendential and distribute half shares between two servers. By applying secure two-party computation, the two shares are combined in a private way in the POST traffic.</p>
+
+      <!---picture here--->
+      <img src="credential.jpg" alt="Protocol" width="400" height="220">
+
+      <!---description--->
+      <p>One Mailet server is picked up by the user to be the initiator, which starts the authorization by including cred1 in the POST traffic to the interceptor. <br>
+      Another Mailet server is chosen as the interceptor, which relay traffic between the initiator and the social website. When seeing the POST traffic, the interceptor interrupts and starts secure two-party computation with the initiator to compute the complete credential in a private way. Finally, the interceptor resumes the POST traffic which now includes the complete credential.  </p>
+
+
+
+
